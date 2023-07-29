@@ -1,3 +1,5 @@
+// Writing the new stuff that I did not learn in my CS intro class
+
 import java.util.*;
 
 public class Day1 {
