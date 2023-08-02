@@ -83,6 +83,21 @@ public class Employee {
                 && Objects.equals(this.hireDay, other.getHireDay());
     }
 
+    public int hashCode()
+    {
+        return 7 * name.hashCode()
+                + 11 * Double.valueOf(salary).hashCode()
+                + 13 * hireDay.hashCode();
+    }
+       public String toString()
+        {
+            return getClass().getName()
+                    + "[name=" + name
+                    + ",salary=" + salary
+                    + ",hireDay=" + hireDay
+                    + "]";
+        }
+
     public LocalDate getHireDay() {
         return this.hireDay;
     }
