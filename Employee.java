@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
-public class Employee {
+public class Employee extends Person{
     private final String name;
     private double salary = 0;
     private final LocalDate hireDay;
@@ -35,11 +35,19 @@ public class Employee {
         this.evaluations = new StringBuilder("");
     }
 
+
+
+
+
     /**
      * @return number of employees
      */
     public int getNumEmployees() {
         return Employee.numEmployees;
+    }
+
+    public String getDescription() {
+        return "An employee working for a major company";
     }
 
     public final String getName() {
