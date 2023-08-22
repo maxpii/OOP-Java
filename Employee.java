@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.Date;
 import java.util.Objects;
 
-public class Employee extends Person{
+public class Employee extends Person implements Comparable{
     private final String name;
     private double salary = 0;
     private final LocalDate hireDay;
@@ -36,9 +36,10 @@ public class Employee extends Person{
     }
 
 
-
-
-
+    public int compareTo(Object otherObject) {
+        Employee other = (Employee) otherObject;
+        return Double.compare(salary, other.salary); // returns negative value if first argument is smaller, postive if bigger, and 0 if equal
+    }
     /**
      * @return number of employees
      */
