@@ -20,5 +20,6 @@ public class Interfaces {
         // a class that implements the Sportable interface, and implements all the methods in it
         SoccerPlayer messi = new SoccerPlayer("Lionel Messi",100,100,100,85);
         System.out.println(messi.getDescription());
+        System.out.println(messi.hasBadLifeStyle());
     }
 }
